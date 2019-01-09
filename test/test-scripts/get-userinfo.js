@@ -4,7 +4,7 @@ var userDetails;
 //for user repository list: https://api.github.com/users/Iararibeiro/repos
 function initialize() {
   var options = {
-    url: 'https://api.github.com/users/Iararibeiro/',
+    url: 'https://api.github.com/users/Iararibeiro/repos',
     headers: {
       'User-Agent':'request'
     }
@@ -26,7 +26,6 @@ function main(){
   var initializePromise = initialize();
   initializePromise.then(function(result){
     userDetails = result;
-    console.log("Initialized user details");
     console.log(userDetails);
   }, function(err) {
     console.log(err);

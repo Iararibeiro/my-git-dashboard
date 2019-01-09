@@ -1,0 +1,22 @@
+{
+  "name": "my-git-dashboard",
+  "version": "1.0.0",
+  "description": "Web application to create a statistic dashboard for you github profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iararibeiro/my-git-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iararibeiro/my-git-dashboard/issues"
+  },
+  "homepage": "https://github.com/Iararibeiro/my-git-dashboard#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
