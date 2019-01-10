@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import icon from './img/icon.svg';
 import './App.css';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <header className="App-header">
-        <img src={icon} /> My Git Dashboard
-      </header>
+      <Header />
       <div className="dashboard">
       </div>
       <Footer />

@@ -17,7 +17,6 @@ html {
 .App-header {
   background-color: #05194e;
   color: #2e92e0;
-  padding: 10px;
   text-align: left;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -27,8 +26,34 @@ html {
   width: 16px;
 }
 
+.App-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.App-name,
+.App-header li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+.App-header .About {
+  float: right;
+  padding: 15px 20px;
+}
+
+.App-header .About:hover{
+  background-color: #031136;
+  color: #56469f;
+}
+
 .dashboard {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .Footer{
