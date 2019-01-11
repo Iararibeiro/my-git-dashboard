@@ -33,23 +33,24 @@ html {
   overflow: hidden;
 }
 
-.App-name,
-.App-header li {
+.Nav-link {
   float: left;
   display: block;
   text-align: center;
-  padding: 15px 10px;
   text-decoration: none;
-}
-
-.App-header .About {
-  float: right;
   padding: 15px 20px;
+  color: #2e92e0;
+
 }
 
-.App-header .About:hover{
+.About .Nav-link {
+  float: right;
+
+}
+
+.Nav-link:hover,
+.Nav-link .active {
   background-color: #031136;
-  color: #56469f;
 }
 
 .dashboard {
