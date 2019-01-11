@@ -10,7 +10,7 @@ class Footer extends React.Component {
           <a href="https://github.com/Iararibeiro"><img src={githubIcon} className="icon" alt="Github logo" /></a>
           <a href="https://www.linkedin.com/in/iararibeiro/"><img src={linkedinIcon} className="icon" alt="LinkedIn logo" /></a>
         </div>
-        <p className="Signature">Iara Ribeiro 2018</p>
+        <p className="Signature">Iara Ribeiro 2019</p>
       </div>
     );
   }

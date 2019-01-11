@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-/*purple: #56469f
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+/*purple: #2d1d5f
 light-blue: #2e92e0
 dark-blue: #05194e
 */
@@ -8,22 +11,26 @@ html {
   background-image: url(./img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .App {
   text-align: center;
+
 }
 
 .App-header {
   background-color: #05194e;
   color: #2e92e0;
   text-align: left;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Abel', serif;
   font-size: 20px;
+
 }
 
 .App-header img {
   width: 16px;
+
 }
 
 .App-header ul {
@@ -31,6 +38,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+
 }
 
 .Nav-link {
@@ -51,23 +59,113 @@ html {
 .Nav-link:hover,
 .Nav-link .active {
   background-color: #031136;
+
 }
 
 .dashboard {
   min-height: 80vh;
+
 }
 
 .Footer{
   background-color: #05194e;
   padding-bottom: 1px;
+
 }
 
 .Signature {
   color: #2e92e0;
   font-size: 10px;
+
 }
 
 .icon {
   width: 40px;
-  padding: 25px 10px 4px 10px
+  padding: 25px 10px 4px 10px;
+
+}
+
+/*Welcome page*/
+.Welcome {
+  background-color: #031137;
+  padding: 50px;
+  font-family: 'Abel', serif;
+  font-size: 45px;
+  color: #2e92e0;
+  opacity: 0.7;
+
+}
+
+.Welcome img {
+  width: 80px;
+
+}
+
+.Section {
+  background-color: #ececec;
+  padding: 50px;
+  margin-top: -2px;
+  font-family: 'Roboto', sans-serif;
+  color: #24174b;
+  font-size: 23px;
+  text-align: left;
+
+}
+
+.Main-icon {
+  width: 50px;
+  position: absolute;
+  margin-left: 70px;
+
+}
+
+.Section.Features {
+  width: 100%;
+  padding-top: 0px;
+  height: 500px;
+  
+}
+
+.Feature {
+  float: left;
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.Feature img {
+  background-color: #24174b;
+  padding: 25px;
+  border-radius: 50%;
+  width: 60px;
+
+}
+
+.Feature p {
+  margin: 35px;
+  text-align: center;
+  font-size: 22px;
+  color: #444444;
+
+}
+
+.Feature.First {
+  margin-left: 10%;
+
+}
+
+.Feature.Last {
+  margin-right: 10%;
+
+}
+
+.Main-phrase {
+  position: relative;
+  padding-left: 130px;
+  margin-top: 6px;
+  font-size: 36px;
+  color: #05194e;
+
 }

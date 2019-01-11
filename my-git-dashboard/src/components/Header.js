@@ -6,18 +6,22 @@ import icon from '../img/icon.svg';
 
 class Header extends React.Component {
   render() {
+    const selectedStyle = {
+      backgroundColor: "white"
+    }
+
     return (
       <Router>
         <div>
         <nav className="App-header">
           <ul className="Header-links">
             <li className="App-name">
-              <Link to={'/'} className="Nav-link" activeClassName="active">
-                <img src={icon} /> My Git Dashboard
+              <Link to={'/'} className="Nav-link" activeSyle={selectedStyle}>
+                <img src={icon} alt="the icon symbol"/> My Git Dashboard
               </Link>
             </li>
             <li className="About">
-              <Link to={'/about'} className="Nav-link" activeClassName="active">
+              <Link to={'/about'} className="Nav-link" activeSyle={selectedStyle}>
                 About
               </Link>
             </li>
