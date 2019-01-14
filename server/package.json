@@ -1,0 +1,19 @@
+{
+  "name": "my-git-dashboard-server",
+  "version": "1.0.0",
+  "description": "This the server used in the application My Git Dashboard",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
