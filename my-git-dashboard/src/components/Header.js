@@ -16,12 +16,12 @@ class Header extends React.Component {
         <nav className="App-header">
           <ul className="Header-links">
             <li className="App-name">
-              <Link to={'/'} className="Nav-link" activeSyle={selectedStyle}>
+              <Link to={'/'} className="Nav-link" activeStyle={selectedStyle}>
                 <img src={icon} alt="the icon symbol"/> My Git Dashboard
               </Link>
             </li>
             <li className="About">
-              <Link to={'/about'} className="Nav-link" activeSyle={selectedStyle}>
+              <Link to={'/about'} className="Nav-link" activeStyle={selectedStyle}>
                 About
               </Link>
             </li>

@@ -63,7 +63,8 @@ html {
 }
 
 .dashboard {
-  min-height: 80vh;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
 }
 
@@ -122,8 +123,9 @@ html {
 .Section.Features {
   width: 100%;
   padding-top: 0px;
+  padding-bottom: 0px;
   height: 500px;
-  
+
 }
 
 .Feature {
@@ -167,5 +169,96 @@ html {
   margin-top: 6px;
   font-size: 36px;
   color: #05194e;
+
+}
+
+.Step {
+  margin: 70px 71px;
+
+}
+
+.Step img {
+   width: 80px;
+   border-radius: 50%;
+   background-color: #d5d1df;
+   padding: 12px;
+
+}
+
+.Step p {
+  width: 100%;
+  margin-left: 140px;
+  margin-top: -70px;
+  position: relative;
+  float: left;
+
+}
+
+/* Home dashboard page*/
+.UserPicture {
+  background-color: #05194e;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 250px;
+  opacity: 0.8;
+
+}
+
+.UserPicture img {
+  width: 200px;
+  margin-top: 30px;
+
+}
+
+.GenerateBtn {
+  margin: 20px;
+	background-color:#2d1d5f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	padding:12px 34px;
+	text-decoration:none;
+	text-shadow:0px 1px 50px #120b26;
+  border-color: #24174c;
+  opacity: 0.5;
+  text-transform: uppercase;
+
+}
+
+.GenerateBtn:hover {
+	background-color:#24174c;
+
+}
+
+.GenerateBtn:active {
+	position:relative;
+	top:1px;
+
+}
+
+.UserSubmit {
+  width: 350px;
+  margin: 0 auto;
+  padding: 30px;
+
+}
+
+.UserSubmit label {
+  font-family: 'Abel', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #05194e;
+
+}
+
+.UserSubmit input{
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  width: 75%;
+  font-family: 'Roboto', sans-serif;
 
 }
