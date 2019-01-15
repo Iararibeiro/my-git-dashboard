@@ -1,23 +1,27 @@
 import React from 'react';
 import octProfile from '../img/octprofile.svg';
+import axios from 'axios';
 
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      userhandle: ''
+    };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.updateInputValue = this.updateInputValue.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
+  updateInputValue(event) {
+    this.setState({ userhandle: event.target.value });
   }
 
   handleSubmit(event) {
+    axios.get('https://my-git-dashboard-server.herokuapp.com/userimg/' + this.state.userhandle )
+      .then(response => console.log(response));
     event.preventDefault();
-    alert('A name was submitted: ' + this.state.value);
 
   }
 
@@ -31,10 +35,10 @@ class Home extends React.Component {
           <form>
             <label>
               Type the User handle and click in generate <br />
-              <input type="text" name="name" placeholder="@userhandle" />
+              <input type="text" name="name" placeholder="@userhandle" value={this.state.userhandle} onChange={this.updateInputValue}/>
               <br />
             </label>
-            <button className="GenerateBtn" type="button" onClick="handleSubmit()" >
+            <button className="GenerateBtn" type="button" onClick={this.handleSubmit} >
               Generate
             </button>
           </form>

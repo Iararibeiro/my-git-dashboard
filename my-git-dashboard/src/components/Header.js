@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import icon from '../img/icon.svg';
@@ -7,7 +7,7 @@ import icon from '../img/icon.svg';
 class Header extends React.Component {
   render() {
     const selectedStyle = {
-      backgroundColor: "white"
+      backgroundColor: '#031136'
     }
 
     return (
@@ -16,14 +16,14 @@ class Header extends React.Component {
         <nav className="App-header">
           <ul className="Header-links">
             <li className="App-name">
-              <Link to={'/'} className="Nav-link" activeStyle={selectedStyle}>
+              <NavLink to={'/'} className="Nav-link" activeStyle={selectedStyle}>
                 <img src={icon} alt="the icon symbol"/> My Git Dashboard
-              </Link>
+              </NavLink>
             </li>
             <li className="About">
-              <Link to={'/about'} className="Nav-link" activeStyle={selectedStyle}>
+              <NavLink to={'/about'} className="Nav-link" activeStyle={selectedStyle}>
                 About
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

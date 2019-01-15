@@ -121,7 +121,6 @@ html {
 }
 
 .Section.Features {
-  width: 100%;
   padding-top: 0px;
   padding-bottom: 0px;
   height: 500px;
@@ -186,7 +185,7 @@ html {
 }
 
 .Step p {
-  width: 100%;
+  width: 90%;
   margin-left: 140px;
   margin-top: -70px;
   position: relative;
