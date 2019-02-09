@@ -1,7 +1,7 @@
 import React from 'react';
 import octProfile from '../img/octprofile.svg';
 import axios from 'axios';
-
+import icon from '../img/icon.svg';
 
 class Home extends React.Component {
   constructor(props) {
@@ -33,22 +33,25 @@ class Home extends React.Component {
   render(){
     return (
       <div className="dashboard">
-        <div className="UserPicture">
-          <img src={this.state.userimg} alt="the octcat image"/>
-        </div>
-        <div className="UserSubmit">
-          <form>
-            <label>
-              { this.state.hideInput ? <p>Type the User handle and click in generate <br /></p> :
-                <p> This is your user?<br /></p>}
-              { this.state.hideInput ? <input type="text" name="name" placeholder="@userhandle"
-              value={this.state.userhandle} onChange={this.updateInputValue}/> : null }
-              <br />
-            </label>
-            <button className="GenerateBtn" type="button" onClick={this.handleSubmit} >
-              Generate
-            </button>
-          </form>
+        <div className="box">
+          <h1><img src={icon} alt="the icon symbol"/> My Git Dashboard </h1>
+          <div className="UserPicture">
+            <img src={this.state.userimg} alt="the octcat image"/>
+          </div>
+          <div className="UserSubmit">
+            <form>
+              <label>
+                { this.state.hideInput ? <p>Type the User handle and click in generate <br /></p> :
+                  <p> This is your user?<br /></p>}
+                { this.state.hideInput ? <input type="text" name="name" placeholder="@userhandle"
+                value={this.state.userhandle} onChange={this.updateInputValue}/> : null }
+                <br />
+              </label>
+              <button className="GenerateBtn" type="button" onClick={this.handleSubmit} >
+                Generate
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     )
