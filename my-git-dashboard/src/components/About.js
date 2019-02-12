@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import icon from '../img/icon.svg';
 import codeBlue from '../img/code-blue.svg';
 import history from '../img/history.svg';
@@ -12,6 +13,7 @@ class About extends React.Component {
   render(){
     return (
       <div>
+      <Header />
         <div className="Welcome">
           <h1><img src={icon} alt="the icon symbol"/> My Git Dashboard </h1>
         </div>

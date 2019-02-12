@@ -2,6 +2,8 @@ import React from 'react';
 import githubIcon from '../img/github.svg';
 import linkedinIcon from '../img/linkedin.svg';
 
+import { Link, Route } from 'react-router-dom';
+
 class Footer extends React.Component {
   render() {
     return (
@@ -9,8 +11,8 @@ class Footer extends React.Component {
         <div className="Short-description">
           <p> My Git Dashboard, produces a dashboard based <br />
           in your history and Github habits.</p>
-          <button className="About-btn" type="button" >
-            Learn more
+          <button className="About-btn" type="button">
+             <Link to="about">Learn more</Link>
           </button>
         </div>
         <div className="Social-icons">
