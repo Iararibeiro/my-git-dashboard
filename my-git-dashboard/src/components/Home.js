@@ -36,7 +36,7 @@ class Home extends React.Component {
         <div className="box">
           <h1><img src={icon} alt="the icon symbol"/> My Git Dashboard </h1>
           <div className="UserPicture">
-            <img src={this.state.userimg} alt="the octcat image"/>
+            <img src={this.state.userimg} alt="the octcat"/>
           </div>
           <div className="UserSubmit">
             <form>
@@ -47,7 +47,7 @@ class Home extends React.Component {
                 value={this.state.userhandle} onChange={this.updateInputValue}/> : null }
                 <br />
               </label>
-              <button className="GenerateBtn" type="button" onClick={this.handleSubmit} >
+              <button className="Default-btn" type="button" onClick={this.handleSubmit} >
                 Generate
               </button>
             </form>

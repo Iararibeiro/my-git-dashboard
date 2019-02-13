@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
-/*purple: #5f4d93
+/*
 light-blue: #2e92e0
 dark-blue: #05194e
+gray-purple: #5C5565
+light-pink: #E37682
+purple: #5f4d93
+dark-purple: #24174c
 */
 
 html {
@@ -19,8 +23,8 @@ html {
 }
 
 .App-header {
-  background-color: #05194e;
-  color: #2e92e0;
+  background-color: #24174c;
+  color: #E37682;
   text-align: left;
   font-family: 'Abel', serif;
   font-size: 20px;
@@ -46,7 +50,7 @@ html {
   text-align: center;
   text-decoration: none;
   padding: 15px 20px;
-  color: #2e92e0;
+  color: #E37682;
 
 }
 
@@ -121,29 +125,12 @@ html {
 
 }
 
-.About-btn {
-  color: #f7f7f7;
-  background-color: Transparent;
-  border: 1px solid #f7f7f7;
-  padding: 10px;
-
-}
-
-.About-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-
-}
-
-.About-btn a {
-  text-decoration: none;
-  color: #f7f7f7;
-}
-
 /*Welcome page*/
 .Welcome {
   background-color: #031137;
   padding: 50px;
   font-family: 'Abel', serif;
+  text-align: center;
   font-size: 45px;
   color: #2e92e0;
   opacity: 0.7;
@@ -182,7 +169,7 @@ html {
 
 .Feature {
   float: left;
-  width: 20%;
+  width: 22%;
   margin: 10px;
   text-align: center;
   padding: 20px;
@@ -264,33 +251,6 @@ html {
 
 }
 
-.GenerateBtn {
-  margin: 20px;
-	background-color:#5f4d93;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-  font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	padding:12px 34px;
-	text-decoration:none;
-	text-shadow:0px 1px 50px #120b26;
-  border-color: #5f4d93;
-  text-transform: uppercase;
-
-}
-
-.GenerateBtn:hover {
-	background-color:#24174c;
-
-}
-
-.GenerateBtn:active {
-	position:relative;
-	top:1px;
-
-}
-
 .UserSubmit {
   width: 350px;
   margin: 0 auto;
@@ -313,4 +273,98 @@ html {
   width: 75%;
   font-family: 'Roboto', sans-serif;
 
+}
+
+/*404 page*/
+
+.Note-board {
+  background-color: rgba(255,255,255,0.7);
+  margin: 10%;
+  padding: 5%;
+  border-radius: 5px;
+  color:#24174c;
+
+}
+
+.Note-board img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.Note-board h1 {
+  text-align: center;
+  font-family: 'Abel', serif;
+
+}
+
+.Note-board p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+/* Buttons */
+.Trnsp-btn {
+  color: #f7f7f7;
+  background-color: Transparent;
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+
+}
+
+.Trnsp-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.Trnsp-btn a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.Default-btn {
+  margin: 20px;
+	background-color:#5f4d93;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	padding:12px 34px;
+	text-decoration:none;
+	text-shadow:0px 1px 50px #120b26;
+  border-color: #5f4d93;
+  text-transform: uppercase;
+
+}
+
+.Default-btn:hover {
+	background-color:#24174c;
+
+}
+
+.Default-btn:active {
+	position:relative;
+	top:1px;
+
+}
+
+.Secondary-btn {
+  color: #5C5565;
+  background-color: Transparent;
+  border: 1px solid #5C5565;
+  padding: 10px;
+}
+
+.Secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.Secondary-btn a {
+  text-decoration: none;
+  color: #5C5565;
 }

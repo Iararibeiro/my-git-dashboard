@@ -1,7 +1,7 @@
 import React from 'react';
-import icon from '../img/icon.svg';
+import iconPink from '../img/icon-pink.svg';
 
-import { Link, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
   render() {
@@ -13,14 +13,9 @@ class Header extends React.Component {
         <nav className="App-header">
           <ul className="Header-links">
             <li className="App-name">
-              <Link to={'/'} className="Nav-link" activeStyle={selectedStyle}>
-                <img src={icon} alt="the icon symbol"/> Home
-              </Link>
-            </li>
-            <li className="About">
-              <Link to={'/about'} className="Nav-link" activeStyle={selectedStyle}>
-                About
-              </Link>
+              <NavLink to={'/'} className="Nav-link">
+                <img src={iconPink} alt="the icon symbol"/> Home
+              </NavLink>
             </li>
           </ul>
         </nav>
