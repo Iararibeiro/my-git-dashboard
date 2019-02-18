@@ -1,4 +1,7 @@
 import React from 'react';
+import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
+
 import octProfile from '../img/octprofile.svg';
 import axios from 'axios';
 import icon from '../img/icon.svg';
@@ -9,25 +12,15 @@ class Home extends React.Component {
     this.state = {
       userhandle: '',
       userimg: octProfile,
-      hideInput: true
+      hideInput: true,
+      responseLogin: '',
     };
 
-    this.updateInputValue = this.updateInputValue.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
   }
 
-  updateInputValue(event) {
-    this.setState({ userhandle: event.target.value });
-  }
-
-  handleSubmit(event) {
-    axios.get('https://my-git-dashboard-server.herokuapp.com/userimg/' + this.state.userhandle )
-      .then(response => this.setState({
-        userimg: response.data ,
-        hideInput: false
-      } ));
-    event.preventDefault();
-
+  handleLogin(event) {
+    this.setState({ responseLogin: event.target.value });
   }
 
   render(){
@@ -38,19 +31,20 @@ class Home extends React.Component {
           <div className="UserPicture">
             <img src={this.state.userimg} alt="the octcat"/>
           </div>
-          <div className="UserSubmit">
-            <form>
-              <label>
-                { this.state.hideInput ? <p>Type the User handle and click in generate <br /></p> :
-                  <p> This is your user?<br /></p>}
-                { this.state.hideInput ? <input type="text" name="name" placeholder="@userhandle"
-                value={this.state.userhandle} onChange={this.updateInputValue}/> : null }
-                <br />
-              </label>
-              <button className="Default-btn" type="button" onClick={this.handleSubmit} >
-                Generate
-              </button>
-            </form>
+          <div className="LoginInfo">
+            <GoogleLogin
+              clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+              buttonText="Login with Google"
+              onSuccess={this.handleLogin}
+              onFailure={this.handleLogin}
+            />
+            <FacebookLogin
+              appId="1088597931155576"
+              autoLoad={true}
+              fields="name,email,picture"
+              onClick={this.handleLogin}
+              callback={this.handleLogin}
+            />
           </div>
         </div>
       </div>
