@@ -233,40 +233,21 @@ html {
 
 }
 
-/* Home dashboard page*/
-.UserPicture {
-  background-color: #05194e;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-  border-radius: 50%;
-  opacity: 0.8;
+/* login page */
+
+.Login {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #ececec;
 
 }
 
-.UserPicture img {
-  width: 129px;
-  margin-top: 10px;
-  border-radius: 50%;
+.Login form {
+  margin: 0px 30px;
 
 }
 
-.UserSubmit {
-  width: 350px;
-  margin: 0 auto;
-  padding: 30px;
-
-}
-
-.UserSubmit label {
-  font-family: 'Abel', serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #05194e;
-
-}
-
-.UserSubmit input{
+.Login input ,
+.Login-Social input {
   margin-top: 20px;
   padding: 12px;
   font-size: 16px;
@@ -275,9 +256,41 @@ html {
 
 }
 
+.Login label {
+  width: 80px;
+  display: inline-block;
+  text-align: left;
 
-.LoginInfo button {
-  margin: 40px 20px;
+}
+
+.Login p, .Login label,
+.Login-Social p, .Login-Social label {
+  font-family: 'Abel', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b7393;
+
+}
+
+.form-check {
+  text-align: left;
+  margin-left: 80px;
+
+}
+
+.form-check-input {
+  width: 10px !important;
+
+}
+
+.form-check-label {
+  width: 120px !important;
+  font-size: 13px !important;
+
+}
+
+.Login-Social button {
+  margin: 10px 30px 20px;
 
 }
 

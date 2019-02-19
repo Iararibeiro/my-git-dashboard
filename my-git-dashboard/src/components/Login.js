@@ -1,18 +1,14 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
+import { Form, FormGroup, FormLabel, FormControl, Button, FormCheck } from "react-bootstrap";
 
-import octProfile from '../img/octprofile.svg';
-import axios from 'axios';
 import icon from '../img/icon.svg';
 
-class Home extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userhandle: '',
-      userimg: octProfile,
-      hideInput: true,
       responseLogin: '',
     };
 
@@ -28,10 +24,26 @@ class Home extends React.Component {
       <div className="dashboard">
         <div className="box">
           <h1><img src={icon} alt="the icon symbol"/> My Git Dashboard </h1>
-          <div className="UserPicture">
-            <img src={this.state.userimg} alt="the octcat"/>
+          <div className="Login">
+            <Form>
+              <FormGroup controlId="formBasicEmail">
+                <FormLabel> Login </FormLabel>
+                <FormControl type="email" placeholder="Enter email" />
+              </FormGroup>
+              <FormGroup controlId="formBasicPassword">
+                <FormLabel> Password </FormLabel>
+                <FormControl type="password" placeholder="Password" />
+              </FormGroup>
+              <FormGroup controlId="formBasicChecbox">
+                <FormCheck type="checkbox" label="Remember me" />
+              </FormGroup>
+              <Button className="Default-btn" variant="primary" type="submit">
+                Login
+              </Button>
+            </Form>
           </div>
-          <div className="LoginInfo">
+          <div className="Login-Social">
+            <p>Sign in with</p>
             <GoogleLogin
               clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
               buttonText="Login with Google"
@@ -52,4 +64,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Login;
