@@ -72,7 +72,7 @@ html {
 }
 
 .box {
-  width: 400px;
+  width: 500px;
   background-color: #f7f7f7;
   padding: 20px;
   margin: 0 auto;
@@ -233,46 +233,103 @@ html {
 
 }
 
-/* Home dashboard page*/
-.UserPicture {
-  background-color: #05194e;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-  border-radius: 50%;
-  opacity: 0.8;
+/* login page */
+
+.Login {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ececec;
+  position: relative;
 
 }
 
-.UserPicture img {
-  width: 129px;
-  margin-top: 10px;
-  border-radius: 50%;
+.Login-Social {
+  margin-top: 25px;
 
 }
 
-.UserSubmit {
-  width: 350px;
-  margin: 0 auto;
-  padding: 30px;
-
-}
-
-.UserSubmit label {
+.Retrieve-password {
   font-family: 'Abel', serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #05194e;
+  font-size: 13px;
+  color: #7b7393;
+  position: absolute;
+  right: 35px;
+  top: 140px;
 
 }
 
-.UserSubmit input{
+.Sign-up {
+  font-family: 'Abel', serif;
+  font-size: 13px;
+  color: #7b7393;
+  margin-bottom: 0px;
+
+}
+
+.Login form {
+  margin: 0px 30px;
+
+}
+
+.Login input ,
+.Login-Social input {
   margin-top: 20px;
   padding: 12px;
   font-size: 16px;
   width: 75%;
   font-family: 'Roboto', sans-serif;
 
+}
+
+.Login label {
+  width: 80px;
+  display: inline-block;
+  text-align: left;
+
+}
+
+.Login label,
+.Login-Social label {
+  font-family: 'Abel', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b7393;
+
+}
+
+.form-check {
+  text-align: left;
+  margin-left: 80px;
+
+}
+
+.form-check-input {
+  width: 10px !important;
+
+}
+
+.form-check-label {
+  font-size: 13px !important;
+  font-weight: 100 !important;
+
+}
+
+.Login-Social button {
+  margin: 10px 30px 20px;
+
+}
+
+.kep-login-facebook.metro {
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255,255,255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
 }
 
 /*404 page*/
