@@ -236,8 +236,32 @@ html {
 /* login page */
 
 .Login {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   border-bottom: 2px solid #ececec;
+  position: relative;
+
+}
+
+.Login-Social {
+  margin-top: 25px;
+
+}
+
+.Retrieve-password {
+  font-family: 'Abel', serif;
+  font-size: 13px;
+  color: #7b7393;
+  position: absolute;
+  right: 35px;
+  top: 140px;
+
+}
+
+.Sign-up {
+  font-family: 'Abel', serif;
+  font-size: 13px;
+  color: #7b7393;
+  margin-bottom: 0px;
 
 }
 
@@ -263,8 +287,8 @@ html {
 
 }
 
-.Login p, .Login label,
-.Login-Social p, .Login-Social label {
+.Login label,
+.Login-Social label {
   font-family: 'Abel', serif;
   font-size: 18px;
   font-weight: bold;
@@ -284,8 +308,8 @@ html {
 }
 
 .form-check-label {
-  width: 120px !important;
   font-size: 13px !important;
+  font-weight: 100 !important;
 
 }
 
