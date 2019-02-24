@@ -11,7 +11,6 @@ class App extends Component {
       <div className="App">
       { !auth0Client.isAuthenticated() && <Login /> }
       { auth0Client.isAuthenticated() && <Dashboard /> }
-      <Footer />
       </div>
     );
   }

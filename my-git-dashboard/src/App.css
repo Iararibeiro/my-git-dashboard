@@ -242,6 +242,21 @@ html {
 
 }
 
+.box h1 {
+  text-align: center;
+
+}
+
+.New-Account p {
+  font-family: 'Abel', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #7b7393;
+  text-align: center;
+  padding-top: 15px;
+
+}
+
 .Login-Social {
   margin-top: 25px;
 
@@ -265,11 +280,13 @@ html {
 
 }
 
+.New-Account form,
 .Login form {
   margin: 0px 30px;
 
 }
 
+.New-Account input,
 .Login input ,
 .Login-Social input {
   margin-top: 20px;
@@ -280,6 +297,7 @@ html {
 
 }
 
+.New-Account label,
 .Login label {
   width: 80px;
   display: inline-block;
@@ -287,12 +305,18 @@ html {
 
 }
 
+.New-Account label,
 .Login label,
 .Login-Social label {
   font-family: 'Abel', serif;
   font-size: 18px;
   font-weight: bold;
   color: #7b7393;
+
+}
+
+.New-Account .form-check-label {
+  width: 120px !important;
 
 }
 
@@ -330,6 +354,12 @@ html {
   font-size: 14px;
   font-weight: 500;
   font-family: Roboto, sans-serif;
+}
+
+.New-Account button {
+  display: block;
+  margin: 30px auto;
+  
 }
 
 /*404 page*/

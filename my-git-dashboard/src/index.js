@@ -4,9 +4,11 @@ import * as serviceWorker from './serviceWorker';
 
 import './index.css';
 import App from './App';
+import Footer from './components/Footer';
 
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import About from './components/About';
+import Register from './components/Register';
 import NotFound from './components/NotFound';
 
 ReactDOM.render(
@@ -15,8 +17,10 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/about" component={About} />
+        <Route path="/register" component={Register} />
         <Route component={NotFound} />
       </Switch>
+      <Footer />
     </div>
   </HashRouter>,
   document.getElementById('root')

@@ -1,8 +1,8 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
+import { Link } from 'react-router-dom';
 import { Form, FormGroup, FormLabel, FormControl, Button, FormCheck } from "react-bootstrap";
-
 import icon from '../img/icon.svg';
 
 class Login extends React.Component {
@@ -59,7 +59,7 @@ class Login extends React.Component {
             />
           </div>
           <div className="Sign-up">
-            <p> Don't have an account? Sign up</p>
+            <p> Don't have an account? <a><Link to={'/register'}>Sign up</Link></a></p>
           </div>
         </div>
       </div>
