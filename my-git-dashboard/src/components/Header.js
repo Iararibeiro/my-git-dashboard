@@ -14,7 +14,7 @@ class Header extends React.Component {
           <ul className="Header-links">
             <li className="App-name">
               <NavLink to={'/'} className="Nav-link">
-                <img src={iconPink} alt="the icon symbol"/> Login
+                <img src={iconPink} alt="the icon symbol"/> Home
               </NavLink>
             </li>
           </ul>
