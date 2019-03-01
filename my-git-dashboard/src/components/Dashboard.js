@@ -1,7 +1,4 @@
 import React from 'react';
-import GoogleLogin from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
-
 import icon from '../img/icon.svg';
 
 class Dashboard extends React.Component {

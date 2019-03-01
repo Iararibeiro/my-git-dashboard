@@ -1,8 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import GoogleLogin from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
-import { Link } from 'react-router-dom';
 import { Form, FormGroup, FormLabel, FormControl, Button, FormCheck } from "react-bootstrap";
 
 import icon from '../img/icon.svg';
