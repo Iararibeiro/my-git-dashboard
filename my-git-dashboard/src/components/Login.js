@@ -44,7 +44,7 @@ class Login extends React.Component {
             </Form>
           </div>
           <div className="Login-Social">
-            <GoogleLogin
+            {/*<GoogleLogin
               clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
               buttonText="Login with Google"
               onSuccess={this.handleLogin}
@@ -56,7 +56,7 @@ class Login extends React.Component {
               fields="name,email,picture"
               onClick={this.handleLogin}
               callback={this.handleLogin}
-            />
+            />*/}
           </div>
           <div className="Sign-up">
             <p> Don't have an account? <Link to={'/register'}>Sign up</Link></p>
