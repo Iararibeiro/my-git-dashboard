@@ -2,7 +2,7 @@
   "name": "my-git-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iararibeiro.github.io/my-git-dashboard",
+  "homepage": "https://iararibeiro.github.io/my-git-dashboard",
   "dependencies": {
     "auth0-js": "^9.10.0",
     "axios": "^0.18.0",
