@@ -5,9 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
   render() {
-    const selectedStyle = {
-      backgroundColor: '#031136'
-    }
     return (
         <div>
         <nav className="App-header">

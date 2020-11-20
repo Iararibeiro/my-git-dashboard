@@ -72,7 +72,7 @@ html {
 }
 
 .box {
-  width: 400px;
+  width: 500px;
   background-color: #f7f7f7;
   padding: 20px;
   margin: 0 auto;
@@ -251,28 +251,119 @@ html {
 
 }
 
-.UserSubmit {
-  width: 350px;
-  margin: 0 auto;
-  padding: 30px;
-
-}
-
-.UserSubmit label {
+.New-Account p {
   font-family: 'Abel', serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
-  color: #05194e;
+  color: #7b7393;
+  text-align: center;
+  padding-top: 15px;
 
 }
 
-.UserSubmit input{
+.Login-Social {
+  margin-top: 25px;
+
+}
+
+.Retrieve-password {
+  font-family: 'Abel', serif;
+  font-size: 13px;
+  color: #7b7393;
+  position: absolute;
+  right: 35px;
+  top: 140px;
+
+}
+
+.Sign-up {
+  font-family: 'Abel', serif;
+  font-size: 13px;
+  color: #7b7393;
+  margin-bottom: 0px;
+
+}
+
+.New-Account form,
+.Login form {
+  margin: 0px 30px;
+
+}
+
+.New-Account input,
+.Login input ,
+.Login-Social input {
   margin-top: 20px;
   padding: 12px;
   font-size: 16px;
   width: 75%;
   font-family: 'Roboto', sans-serif;
 
+}
+
+.New-Account label,
+.Login label {
+  width: 80px;
+  display: inline-block;
+  text-align: left;
+
+}
+
+.New-Account label,
+.Login label,
+.Login-Social label {
+  font-family: 'Abel', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b7393;
+
+}
+
+.New-Account .form-check-label {
+  width: 120px !important;
+
+}
+
+.form-check {
+  text-align: left;
+  margin-left: 80px;
+
+}
+
+.form-check-input {
+  width: 10px !important;
+
+}
+
+.form-check-label {
+  font-size: 13px !important;
+  font-weight: 100 !important;
+
+}
+
+.Login-Social button {
+  margin: 10px 30px 20px;
+
+}
+
+.kep-login-facebook.metro {
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255,255,255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+  padding: 12px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.New-Account button {
+  display: block;
+  margin: 30px auto;
+  
 }
 
 /*404 page*/
