@@ -235,7 +235,7 @@ html {
 
 /* Home dashboard page*/
 .UserPicture {
-  background-color: #05194e;
+  background-color: #86919a;/*#05194e;*/
   width: 150px;
   height: 150px;
   margin: 0 auto;
@@ -245,9 +245,9 @@ html {
 }
 
 .UserPicture img {
-  width: 129px;
+  width: 90px;
   margin-top: 10px;
-  border-radius: 50%;
+  padding: 22px;
 
 }
 
