@@ -87,7 +87,8 @@ html {
 
 .box h1{
   font-family: 'Abel', serif;
-  color: #2e92e0;
+  color: #604e94;
+  text-align: center;
 }
 
 .Footer{
@@ -246,14 +247,19 @@ html {
 
 .UserPicture img {
   width: 90px;
-  margin-top: 10px;
-  padding: 22px;
+  padding: 30px;
 
 }
 
-.New-Account p {
+.UserSubmit button {
+  display: block;
+  margin: 10px auto;
+
+}
+
+.New-Account p, .UserSubmit p {
   font-family: 'Abel', serif;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: bold;
   color: #7b7393;
   text-align: center;
@@ -292,12 +298,15 @@ html {
 
 .New-Account input,
 .Login input ,
-.Login-Social input {
-  margin-top: 20px;
-  padding: 12px;
-  font-size: 16px;
+.Login-Social input,
+.UserSubmit input {
+  /*margin-top: 20px;*/
+  padding: 10px;
+  font-size: 14px;
   width: 75%;
   font-family: 'Roboto', sans-serif;
+  display: block;
+  margin: 0 auto;
 
 }
 
